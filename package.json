@@ -9,6 +9,7 @@
     "build": "webpack && tsc",
     "build:demo": "webpack --config webpack.config.demo.js",
     "test": "jest --silent",
+    "test:dev": "jest --watchAll",
     "coverage": "npm run test -- --coverage",
     "prepare": "npm run build",
     "trypublish": "npm publish || true"
@@ -75,5 +76,8 @@
       "jsx",
       "node"
     ]
+  },
+  "dependencies": {
+    "imask": "6.4.2"
   }
 }
